@@ -1,0 +1,29 @@
+/* Menu start */
+.menu {
+    width: 100%;
+    margin: 10% 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu-container {
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+}
+.menu-content {
+    width: 100%;
+}
+.menu-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+@media screen and (max-width: 1000px) {
+    .menu-container {
+        width: 100%;
+    }
+}

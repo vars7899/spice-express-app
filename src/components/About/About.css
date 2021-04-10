@@ -1,0 +1,33 @@
+/* About start */
+.about {
+    margin: 10% 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about-container {
+    max-width: 1000px;
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
+    grid-column-gap: 20px;
+    padding: 0 20px;
+}
+.tech {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 10px;
+}
+.about-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+@media screen and (max-width: 500px) {
+    .myimage {
+        height: 200px;
+    }
+}

@@ -1,0 +1,28 @@
+.services {
+    z-index: 5;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #212121;
+    background-color: rgba(255, 255, 255);
+}
+.services-container {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 200px));
+    grid-column-gap: 40px;
+}
+.each-service-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px 10px;
+}
+.service-icon {
+    height: 40px;
+    width: 40px;
+    margin-bottom: 15px;
+}

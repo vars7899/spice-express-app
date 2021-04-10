@@ -1,0 +1,92 @@
+.navbar-wrapper {
+    z-index: 200;
+    position: fixed;
+    background-color: #121212;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    height: 50px;
+    width: 100vw;
+}
+.burger-container {
+    display: none;
+}
+.logo-container {
+    font-size: 2rem;
+    font-weight: bolder;
+    cursor: pointer;
+    padding: auto;
+}
+.navlist-container .navlist-content {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.navlist-container > .navlist-content > li {
+    list-style-type: none;
+    padding: 6% 10px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.navlink {
+    text-decoration: none;
+    color: #fff;
+    text-transform: capitalize;
+    padding-bottom: 12.5px;
+    border-bottom: 1px #121212 solid;
+    transition: 300ms ease-in-out;
+}
+.navlink:hover {
+    border-bottom: 1px #fff solid;
+}
+@media screen and (max-width: 625px) {
+    .logo-container {
+        font-size: 1.75rem;
+    }
+    .navlist-container {
+        position: absolute;
+        top: 10%;
+        left: -2000px;
+        width: 80%;
+        text-align: center;
+        height: 100vh;
+        transition: 500ms ease-in-out;
+    }
+    .burger-container {
+        display: block;
+        position: relative;
+        font-size: 1.5rem;
+        top: 0%;
+        right: 0%;
+        transform: translate(10%, 10%);
+    }
+    .navlist-mobile {
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 90%;
+        height: 100vh;
+        background-color: #121212;
+        color: white;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+    }
+    .navlist-content {
+        height: 100%;
+        padding-top: 20%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .navlist-mobile > .navlist-content > li {
+        width: 150%;
+        padding: 20% 0;
+    }
+    /* .navlist-mobile > .navlist-content > li:hover {
+        border-bottom: 1px rgba(255, 255, 255, 0.5) solid;
+    } */
+} ;
